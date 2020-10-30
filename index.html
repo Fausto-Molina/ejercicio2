@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Faustino Molina 01</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+  <div class="container" id="app">
+    <form>
+      <h3>resultado</h3>
+      <h5 class="text-muted" v-text="rta"> </h5>
+      <div class="form-group">
+        <label>ingrese un numero</label>
+        <input type="number" v-model="num1" class="form-control">
+        </div>      
+          <div class="form-group">
+            <label>ingrese un numero</label>
+            <input type="number" v-model="num2" class="form-control">
+          </div>
+          <button type="button" v-on:click="add" class="btn btn-primary">Sumar</button>
+          <button type="button" v-on:click="substract" class="btn btn-danger">restar</button>
+          <button type="button" v-on:click="multiply" class="btn btn-warning">multiplicar</button>
+          
+    </form>
+    </div>
+    <script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
+  
+</body>
+
+</html>
